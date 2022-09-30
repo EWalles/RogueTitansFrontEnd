@@ -8,6 +8,7 @@ import Jayden from "./about/Jayden";
 function About (props) {
     return (
       <div className="Group">
+        <span> </span>
         <Edith />
         <Jayden/>
         <Samim />
