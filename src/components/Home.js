@@ -1,4 +1,3 @@
-//Header.js
 import {useState, useEffect } from 'react';
 
 function Home(props) {
@@ -18,7 +17,7 @@ function Home(props) {
     return (
         <div>
             <h5>
-                {state.classes}
+                {state}
             </h5>
         </div>
     )
