@@ -1,3 +1,4 @@
+import { Link, BrowserRouter as Router } from 'react-router-dom';
 import logo from './logo.svg';
 import api from "./components/Home"
 import Header from "./components/Header"
@@ -7,9 +8,10 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <Header className="App-header">
         
-      </header>
+      </Header>
+      <Footer />
       <body>
         Gaming has been around for as long as humans have been alive. Tabletop roleplaying games... not so much. The first commercially available role-playing game, Dungeons and Dragons (DnD), was published in 1974 by Gygax's TSR which marketed the game as a niche product. It was a mix of war-games and roleplaying. <br/>
         
@@ -18,6 +20,7 @@ function App() {
         This program starts with 5th edition Dungeons and Dragons for a base component. At the top you can click the link and create a character with the SRD rules available. You will need the books for some of the specialties that can not be listed.
       </body>
     </div>
+    
   );
 }
 
