@@ -13,7 +13,9 @@ function App() {
       <body>
         Gaming has been around for as long as humans have been alive. Tabletop roleplaying games... not so much. The first commercially available role-playing game, Dungeons and Dragons (DnD), was published in 1974 by Gygax's TSR which marketed the game as a niche product. It was a mix of war-games and roleplaying. <br/>
         
-        A tabletop role-playing game (typically abbreviated as TRPG or TTRPG), also known as a pen-and-paper role-playing game, is a form of role-playing game (RPG) in which the participants describe their characters' actions through speech. Participants determine the actions of their characters based on their characterization, and the actions succeed or fail according to a set formal system of rules and guidelines. Within the rules, players have the freedom to improvise; their choices shape the direction and outcome of the game.
+        A tabletop role-playing game (typically abbreviated as TRPG or TTRPG), also known as a pen-and-paper role-playing game, is a form of role-playing game (RPG) in which the participants describe their characters' actions through speech. Participants determine the actions of their characters based on their characterization, and the actions succeed or fail according to a set formal system of rules and guidelines. Within the rules, players have the freedom to improvise; their choices shape the direction and outcome of the game. <br />
+
+        This program starts with 5th edition Dungeons and Dragons for a base component. At the top you can click the link and create a character with the SRD rules available. You will need the books for some of the specialties that can not be listed.
       </body>
     </div>
   );
