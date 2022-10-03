@@ -1,11 +1,6 @@
-import React from 'react';
-import { Link, BrowserRouter as Router } from 'react-router-dom';
-// import logo from './logo.svg';
-// import api from "./components/Home"
-import Header from "./components/Header"
-import Footer from "./components/Footer"
-
 import './App.css';
+import Header from './components/Header';
+import Footer from "./components/Footer"
 function App() {
   return (
     <div className="App">
@@ -14,7 +9,7 @@ function App() {
       </Header>
       <Footer />
       <body>
-        <p>
+      <p>
         Gaming has been around for as long as humans have been alive. Tabletop roleplaying games... not so much. The first commercially available role-playing game, Dungeons and Dragons DnD, was published in 1974 by Gygax's TSR which marketed the game as a niche product. It was a mix of war-games and roleplaying.
         </p>
         <p>     
@@ -30,3 +25,4 @@ function App() {
 }
 
 export default App;
+
