@@ -1,6 +1,7 @@
-import { Link, BrowserRouter as Router } from 'react-router-dom';
-import logo from './logo.svg';
-import api from "./components/Home"
+import React from 'react';
+// import { Link, BrowserRouter as Router } from 'react-router-dom';
+// import logo from './logo.svg';
+// import api from "./components/Home"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 

@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 
 import Edith from "./about/Edith";
 import Samim from "./about/Samim";
