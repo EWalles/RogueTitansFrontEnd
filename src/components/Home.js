@@ -4,15 +4,15 @@ function Home(props) {
 
     const [state, setState ] = useState([]);
 
-    useEffect( () => {
-        fetch('https://www.dnd5eapi.co/api/')
-        .then(res => res.json())
-        .then( (result) => {
-            setState(result);
-        }), (error) => {
-            console.log("error")
-        }
-    })
+    // useEffect( () => {
+    //     fetch('https://www.dnd5eapi.co/api/')
+    //     .then(res => res.json())
+    //     .then( (result) => {
+    //         setState(result);
+    //     }), (error) => {
+    //         console.log("error")
+    //     }
+    // })
 
     return (
         <div>
