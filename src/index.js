@@ -1,13 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import { Link, BrowserRouter as Router } from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+// IMPORT SCSS FILE TO BE SOURCE OF STYLING
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+// IMPORT ROUTER
+import { BrowserRouter as Router } from "react-router-dom";
+import App from "./App";
+
+
+ReactDOM.render(
+  <Router>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </Router>,
+  document.getElementById("root")
 );
-

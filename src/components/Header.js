@@ -1,15 +1,15 @@
 //Header.js
 import React from "react"
-import { Link, Router } from "react-router-dom"
+import { Link, Route } from "react-router-dom"
 
 function Header() {
     return (
         <nav className="nav">
-            <Router>
+            <Route>
                 <Link to="/">
                     <div>The Rogue Tavern</div>
                 </Link>
-            </Router>
+            </Route>
         </nav>
     )
 }
