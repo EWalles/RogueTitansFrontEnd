@@ -1,6 +1,7 @@
-import {useState, useEffect } from 'react';
+import React from 'react';
+import {useState,} from 'react';
 
-function Home(props) {
+function Home( ) {
 
     const [state, setState ] = useState([]);
 

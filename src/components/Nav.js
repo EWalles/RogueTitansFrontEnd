@@ -1,18 +1,11 @@
-import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
-
-class Nav extends PureComponent {
-    render() {
-        return (
-            <div>
-                
-            </div>
-        );
-    }
+import React from 'react'
+import { Link, Router } from "react-router-dom"
+export default function Nav() {
+  return (
+    <div>
+    <Router>
+      <Link> Home</Link>
+    </Router>
+    </div>
+  )
 }
-
-Nav.propTypes = {
-
-};
-
-export default Nav;

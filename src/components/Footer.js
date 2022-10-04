@@ -1,15 +1,13 @@
-import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
-import dnd from "./src/pages/DndDisclaimer.js";
-class Footer extends PureComponent {
-    render() {
-        return (
+import React from 'react';
+import dnd from "./DndDisclaimer.js";
+function Footer () {
+    return(
             <div>
                 {dnd}
             </div>
         );
-    }
 }
+
 
 Footer.propTypes = {
 
