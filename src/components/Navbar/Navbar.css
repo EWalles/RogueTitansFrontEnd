@@ -1,0 +1,8 @@
+.NavbarItems{
+    background: linear-gradient(90deg, rgb(162, 4, 4) 0%, rgb(0, 0, 0) 40%);
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
