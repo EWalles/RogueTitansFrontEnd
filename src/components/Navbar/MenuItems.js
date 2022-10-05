@@ -1,3 +1,5 @@
+//Base code was provided by react navbar tutorial by brian design on youtibe
+
 export const MenuItems = [
     {
         title: 'Home',
