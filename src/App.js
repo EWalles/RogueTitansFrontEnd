@@ -1,9 +1,11 @@
 import './App.css';
 import Header from './components/Header';
 import Footer from "./components/Footer"
+import Navbar from './components/Navbar/Navbar';
 function App() {
   return (
     <div className="App">
+      <Navbar/>
       <Header className="App-header">
         
       </Header>
@@ -24,5 +26,34 @@ function App() {
   );
 }
 
-export default App;
+//ZG trying to add a fetch/Ajax call to grab from backend
+//found help on geeksforgeeks and medium.com both show same setup
+class App extends Component {
+  constructor(){
+      super();
+      this.state ={character: []};
+  }
+  componentDidMount() {
+         fetch('/character')
+           .then(res => {
+               console.log(res);
+               return res.json()
+            })
+           .then(character => { 
+               console.log(character); 
+               this.setState({ character })
+            });
+        }
+  render() {
+       return (
+           <div className="api">
+               <h1>New Character</h1>
+               
+           </div>
+           );
+          }
+      }
 
+// this is only first half. I'm still playing outside of this to add second half and try to make it work.
+
+export default App;

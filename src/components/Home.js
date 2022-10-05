@@ -1,5 +1,6 @@
 import React from 'react';
 import {useState,} from 'react';
+import Navbar from './Navbar/Navbar';
 
 function Home( ) {
 
@@ -17,6 +18,7 @@ function Home( ) {
 
     return (
         <div>
+            <Navbar/>
             <h5>
                 {state}
             </h5>
