@@ -2,19 +2,19 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 
 function Index(props) {
-  // formData
+  // formData and I'm not sure if I have to have open strings here
   const [ newForm, setNewForm ] = useState({
     name: "",
     description: "",
     skills: "",
   });
 
-  // handle change for form
+  // handle change for form from looking back at past work/online/w3 schools
   const handleChange = event => {
     setNewForm({ ...newForm, [event.target.name]: event.target.value });
   }
 
-  // handle submit for form
+  // handle submit for form from looking back at past work/online/w3 schools
   const handleSubmit = event => {
     event.preventDefault();
     props.createCharacter(newForm);
@@ -25,7 +25,7 @@ function Index(props) {
     });
   }
 
-  // load function
+  // load function w3 schools and past markdowns
   const loaded = () => {
     return props.character.map(xcharacter => (
       <div key={xcharacter._id} className="xcharacter">
