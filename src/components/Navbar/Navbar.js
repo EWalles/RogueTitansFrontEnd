@@ -4,12 +4,19 @@ import { MenuItems } from "./MenuItems"
 import './Navbar.css'
 
 class Navbar extends Component {
+    state = { clicked: false}
+
+    handleClick = () => {
+        this.setState({ clicked: !this.state.clicked })
+    }
+
+
     render (){
         return(
             <nav className="NavbarItems">
-                <h1 className="navbar-logo">React<i className="fab fa-react"></i></h1>
-                <div className="menu-icon">
-                
+                <h1 className="navbar-logo">React<i class="fa-solid fa-dice-d20"></i></h1>
+                <div className="menu-icon" onClick={this.handleClick}>
+                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
                 <ul>
                     {MenuItems.map((item, index)=>{

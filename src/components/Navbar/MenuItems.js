@@ -10,7 +10,12 @@ export const MenuItems = [
         url: '#',
         cName:'nav-links',
 
-    },  {
+    }, {
+        title: 'Character Sheet',
+        url: '#',
+        cName:'nav-links',
+
+    }, {
         title: 'Sign In',
         url: '#',
         cName:'nav-links',
@@ -20,15 +25,5 @@ export const MenuItems = [
         url: '#',
         cName:'nav-links',
 
-    },{
-        title: 'Character Sheet',
-        url: '#',
-        cName:'nav-links',
-
-    },  {
-        title: 'Drop down',
-        url: '#',
-        cName:'nav-links-mobile',
-
-    },
+    }
 ]

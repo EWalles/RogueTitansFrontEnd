@@ -1,8 +1,22 @@
+/* navbar code was help provided by "react navbar tutorial" by Brian design on youtube */
+
 .NavbarItems{
-    background: linear-gradient(90deg, rgb(162, 4, 4) 0%, rgb(0, 0, 0) 40%);
+    background: linear-gradient(90deg, rgb(135, 3, 3) 0%, rgb(172, 172, 172) 25%);
     height: 57px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+}
+
+.navbar-logo {
+    color: #fff;
+    justify-self: start;
+    margin-left: 20px;
+    cursor:pointer;
+}
+
+.fa-dice-d20 {
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
 }
