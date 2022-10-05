@@ -28,22 +28,22 @@ function App() {
 
 //ZG trying to add a fetch/Ajax call to grab from backend
 //found help on geeksforgeeks and medium.com both show same setup
-class App extends Component {
-  constructor(){
-      super();
-      this.state ={character: []};
-  }
-  componentCharacter() {
-         fetch('/character')
-           .then(res => {
-               console.log(res);
-               return res.json()
-            })
-           .then(CharacterData => { 
-               console.log(CharacterData); 
-               this.setState({ character })
-            });
-        }}
+// class App extends Component {
+//   constructor(){
+//       super();
+//       this.state ={character: []};
+//   }
+//   componentCharacter() {
+//          fetch('/character')
+//            .then(res => {
+//                console.log(res);
+//                return res.json()
+//             })
+//            .then(CharacterData => { 
+//                console.log(CharacterData); 
+//                this.setState({ character })
+//             });
+//         }}
 
 // this is only first half. I'm still playing outside of this to add second half and try to make it work.
 
