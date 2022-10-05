@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Footer from "./components/Footer"
 import Navbar from './components/Navbar/Navbar';
 function App() {
+  const URL = "https://roguetita.herokuapp.com/";
   return (
     <div className="App">
       <Navbar/>
@@ -25,35 +26,25 @@ function App() {
     
   );
 }
-
-//ZG trying to add a fetch/Ajax call to grab from backend
-//found help on geeksforgeeks and medium.com both show same setup
-class App extends Component {
-  constructor(){
-      super();
-      this.state ={character: []};
-  }
-  componentDidMount() {
-         fetch('/character')
-           .then(res => {
-               console.log(res);
-               return res.json()
-            })
-           .then(character => { 
-               console.log(character); 
-               this.setState({ character })
-            });
-        }
-  render() {
-       return (
-           <div className="api">
-               <h1>New Character</h1>
-               
-           </div>
-           );
-          }
-      }
-
-// this is only first half. I'm still playing outside of this to add second half and try to make it work.
+// }
+// here was the route/path/return we had before.
+//   return (
+//     <div className="App">
+//       <Header />
+//       <Switch>
+//         <Route exact path="/">
+//           <Home />
+//         </Route>
+//         <Route path="/projects">
+//           <Projects URL={URL} />
+//         </Route>
+//         <Route path="/about">
+//           <About URL={URL} />
+//         </Route>
+//       </Switch>
+//       <Footer />
+//     </div>
+//   );
+// }
 
 export default App;
