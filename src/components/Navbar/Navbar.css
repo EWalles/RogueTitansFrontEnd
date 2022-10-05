@@ -1,7 +1,7 @@
 /* navbar code was help provided by "react navbar tutorial" by Brian design on youtube */
 
 .NavbarItems{
-    background: linear-gradient(90deg, rgb(135, 3, 3) 0%, rgb(172, 172, 172) 25%);
+    background: linear-gradient(90deg, rgb(88, 88, 88) 0%, rgb(195, 195, 195) 25%);
     height: 57px;
     display: flex;
     justify-content: center;
@@ -19,4 +19,39 @@
 .fa-dice-d20 {
     margin-left: 0.5rem;
     font-size: 1.6rem;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+.nav-links {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav-links:hover{
+    background-color: rgba(255, 39, 82, 0.875);
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+}
+
+.fa-bars {
+    color: #fff;
+}
+
+.nav-links-mobile {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
 }
