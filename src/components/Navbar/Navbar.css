@@ -2,7 +2,7 @@
 
 .NavbarItems{
     background: linear-gradient(90deg, rgb(88, 88, 88) 0%, rgb(195, 195, 195) 25%);
-    height: 57px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,4 +54,86 @@
 
 .menu-icon {
     display: none;
+}
+
+@media screen and (max-width: 960px) {
+    .NavbarItems{
+        position: relative;
+    }
+    
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    } 
+
+    .nav-menu.active{
+        background: rgb(147, 146, 146);
+        left: 0;
+        opacity: 1;
+        transition: all 0,5s ease;
+        z-index: 1;
+    }
+
+    .nav-links{
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    .nav-links:hover{
+        background-color: rgb(245, 182, 182);
+        border-radius: 0;
+    }
+
+    .navbar-logo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(25%, 50%);
+    }
+
+    .menu-icon{
+        display: block;
+        position: absolute;
+        top:0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .fa-times{
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    .nav-links-mobile{
+        display: block;
+        text-align: center;
+        padding: 1.5rem;
+        margin: 2rem auto;
+        border-radius: 4px;
+        width: 80%;
+        background: rgb(255, 177, 177);
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+
+    .nav-links-mobile:hover{
+        background-color: rgb(246, 98, 98);
+        color:#fff;
+        transition: 250ms;
+    }
+
+    Button{
+        display: none;
+    }
 }
