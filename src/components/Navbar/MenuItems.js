@@ -1,4 +1,4 @@
-//Base code was provided by react navbar tutorial by brian design on youtibe
+import './Navbar.css'
 
 export const MenuItems = [
     {
@@ -6,24 +6,23 @@ export const MenuItems = [
         url: '#',
         cName:'nav-links',
 
-    },
-    {
-        title: 'About',
-        url: '#',
-        cName:'nav-links',
-
-    }, {
+    },{
         title: 'Character Sheet',
         url: '#',
         cName:'nav-links',
 
-    }, {
-        title: 'Sign In',
+    },{
+        title: 'About',
         url: '#',
         cName:'nav-links',
 
-    },  {
+    },{
         title: 'Sign Up',
+        url: '#',
+        cName:'nav-links-mobile',
+
+    },{
+        title: 'Sign In',
         url: '#',
         cName:'nav-links-mobile',
 
