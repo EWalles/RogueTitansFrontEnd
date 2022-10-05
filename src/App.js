@@ -45,4 +45,6 @@ class App extends Component {
             });
         }}
 
+// this is only first half. I'm still playing outside of this to add second half and try to make it work.
+
 export default App;
