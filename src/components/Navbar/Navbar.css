@@ -1,13 +1,15 @@
 /*Base navbar code was help provided by "react navbar tutorial" by Brian design on youtube */
 
 .NavbarItems{
-    background: linear-gradient(90deg, rgb(88, 88, 88) 0%, rgb(195, 195, 195) 25%);
+    background: linear-gradient(90deg, rgb(43, 43, 43) 0%, rgb(45, 45, 45) 25%);
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+    border-bottom: 2px solid rgb(255, 0, 0);
 }
+
 
 .navbar-logo {
     color: #fff;
@@ -18,13 +20,19 @@
 
 .fa-dice-d20 {
     margin-left: 0.5rem;
-    font-size: 1.6rem;
+    font-size: 2.5rem;
+    transition: all .2s ease-in-out;
+}
+
+.fa-dice-d20:hover{
+    transform: scale(1.1);
+    color: rgb(141, 0, 0);
 }
 
 .nav-menu {
     display: grid;
     grid-template-columns: repeat(5, auto);
-    grid-gap: 10px;
+    grid-gap: 60px;
     list-style: none;
     text-align: center;
     width: 70vw;
@@ -36,12 +44,12 @@
     color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 0.5rem 1rem;
+    transition: all .2s ease-in-out;
 }
 
 .nav-links:hover{
-    background-color: rgba(255, 39, 82, 0.875);
+    background-color: rgb(141, 0, 0);
     border-radius: 4px;
-    transition: all 0.2s ease-out;
 }
 
 .fa-bars {
@@ -55,6 +63,7 @@
 .menu-icon {
     display: none;
 }
+
 
 @media screen and (max-width: 960px) {
     .NavbarItems{
@@ -73,7 +82,7 @@
     } 
 
     .nav-menu.active{
-        background: rgb(147, 146, 146);
+        background: rgb(36, 36, 36);
         left: 0;
         opacity: 1;
         transition: all 0,5s ease;
@@ -85,10 +94,11 @@
         padding: 2rem;
         width: 100%;
         display: table;
+        font-size: 2rem;
     }
 
     .nav-links:hover{
-        background-color: rgb(245, 182, 182);
+        background-color: rgb(177, 2, 2);
         border-radius: 0;
     }
 
@@ -121,10 +131,11 @@
         margin: 2rem auto;
         border-radius: 4px;
         width: 80%;
-        background: rgb(255, 177, 177);
+        background: rgb(242, 0, 0);
         text-decoration: none;
         color: #fff;
-        font-size: 1.5rem;
+        font-size: 2rem;
+        transition: all .2s ease-in-out;
     }
 
     .nav-links-mobile:hover{
