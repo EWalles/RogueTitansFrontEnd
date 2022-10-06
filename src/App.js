@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Footer from "./components/Footer"
 import Navbar from './components/Navbar/Navbar';
 import CharacterForm from './components/CharacterForm';
-
+import React, { Component } from 'react';
 function App() {
   const URL = "https://roguetita.herokuapp.com/";
   return (
