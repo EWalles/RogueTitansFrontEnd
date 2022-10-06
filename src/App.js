@@ -28,7 +28,10 @@ function App() {
     name: details.name,
     email: details.email
     });
-  } else {console.log('Details do not match')}
+  } else {
+    console.log('Details do not match');
+    setError('Details do not match!');
+}
 
 
   }
