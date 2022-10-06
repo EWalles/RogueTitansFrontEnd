@@ -42,7 +42,6 @@ function App() {
   return (
     <div className="App">
 
-
       <Navbar/>
       {(user.email !="") ? (
         <div className='welcome'>
@@ -78,7 +77,6 @@ function App() {
         <input class="btn btn-info" type="button" value="DND 101"
             onclick="location.href= 'https://blizzardwatch.com/2020/06/05/off-topic-dungeons-dragons-101-beginners-guide/'"/>
         {/* <button type="button" class="btn btn-info"><a href="/character/create">Create Your DND Master</a></button> */}
-
       </body>
         <CharacterForm/>
     </div>

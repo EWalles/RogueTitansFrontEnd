@@ -1,4 +1,4 @@
-*{
+/* *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -7,6 +7,18 @@
 
 .App {
   text-align: center;
+} */
+body{
+
+  background-image: url("https://preview.redd.it/pq61m18mmzp51.jpg?auto=webp&s=5b2d76f1be1be0b8eb1a51080f9822dbd43d7367");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-x: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  color: white;
 }
 body{
 
@@ -20,6 +32,7 @@ body{
   margin: 0;
   color: white;
 }
+
 
 
 /* .App-logo {

@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-
 function Loginform({ Login, error}) {
     const [details, setDetails] = useState({name:"", email: "", password: ""});
 
@@ -22,7 +21,7 @@ function Loginform({ Login, error}) {
                 <input type="email" name="email" id="email" onChange={e => setDetails({...details, email: e.target.value})} value={details.email} />
             </div>
             <div className='form-group'>
-                <label htmlFor='password'>password:</label>
+                <label htmlFor='password'>Password:</label>
                 <input type='password' name='password' id='password' onChange={e => setDetails({...details, password: e.target.value})} value={details.password}/>
             </div>
             <input type="submit" value="LOGIN"/>
