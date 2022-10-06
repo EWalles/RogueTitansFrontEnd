@@ -24,30 +24,14 @@ function App() {
         This program starts with 5th edition Dungeons and Dragons for a base component. At the top you can click the link and create a character with the SRD rules available. You will need the books for some of the specialties that can not be listed.
         </p>
         <CharacterForm/>
+        <input class="btn btn-info" type="button" value="DND 101"
+            onclick="location.href = 'https://blizzardwatch.com/2020/06/05/off-topic-dungeons-dragons-101-beginners-guide/'" />
+        <button type="button" class="btn btn-info"><a href="/character/create">Create Your DND Master</a></button>
       </body>
     </div>
     
   );
 }
-// }
-// here was the route/path/return we had before.
-//   return (
-//     <div className="App">
-//       <Header />
-//       <Switch>
-//         <Route exact path="/">
-//           <Home />
-//         </Route>
-//         <Route path="/projects">
-//           <Projects URL={URL} />
-//         </Route>
-//         <Route path="/about">
-//           <About URL={URL} />
-//         </Route>
-//       </Switch>
-//       <Footer />
-//     </div>
-//   );
-// }
+
 
 export default App;
