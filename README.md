@@ -1,5 +1,5 @@
 # The Rogue Tavern
-# Rogue Titans
+### Rogue Titans
 
 This project was a collaborative effort by Edith, Jaden, Samim, Zach using MERN stack. It is a character sheet builder and editor that starts with Dungeons and Dragons. (Because it's OGL and this is a fan made product)
 
