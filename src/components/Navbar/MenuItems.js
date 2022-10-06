@@ -8,12 +8,12 @@ export const MenuItems = [
 
     },{
         title: 'Character Sheet',
-        url: '#',
+        url: './src/components/CharacterForm.js',
         cName:'nav-links',
 
     },{
         title: 'About',
-        url: '#',
+        url: './src/pages/About.js',
         cName:'nav-links',
 
     },{

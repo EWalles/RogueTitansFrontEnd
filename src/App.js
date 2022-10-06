@@ -23,8 +23,8 @@ function App() {
         <p>
         This program starts with 5th edition Dungeons and Dragons for a base component. At the top you can click the link and create a character with the SRD rules available. You will need the books for some of the specialties that can not be listed.
         </p>
-        <CharacterForm/>
       </body>
+        <CharacterForm/>
     </div>
     
   );

@@ -6,7 +6,6 @@ function Samim() {
   let element=<a href={url}>Github handle</a>;
   render (
     <div className="App">
-      <Navbar/>
         samim kohistani ....................: {element}
     </div>
   );
