@@ -12,13 +12,20 @@ export const MenuItems = [
         cName:'nav-links',
 
     },{
-        title: 'About',
-        url: './src/pages/About.js',
+        title: 'Characters',
+        url: '#',
         cName:'nav-links',
 
     },{
+        title: 'About',
+        url: '#',
+        cName:'nav-links',
+
+    },{
+
+    },{
         title: 'Log in or Sign Up',
-        url: './src/components/LoginForm.js',
+        url: '.#',
         cName:'nav-links-mobile',
 
     }
