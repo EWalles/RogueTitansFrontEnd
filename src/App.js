@@ -36,7 +36,7 @@ function App() {
           <button>Logout</button>
           </div>
       ) : (
-        <Loginform/>
+        <Loginform Login={Login} error={error}/>
       )}
 
       <Navbar/>

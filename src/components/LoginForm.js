@@ -1,8 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 
-function Loginform() {
+function Loginform({ Login, error}) {
+    const [details, setDetails] = useState({name:"", email: "", password: ""});
+
+    const submitHandler = e =>{
+        e.preventDefault();
+        Login(details);
+    }
+
   return (
-    <form>
+    <form onSubmit={submitHandler}>
         <div className='form-inner'>
             <h2>Login</h2>
             {/* {error} */}
@@ -18,6 +25,7 @@ function Loginform() {
                 <label htmlFor='password'>password:</label>
                 <input type='password' name='password' id='password'/>
             </div>
+            <input type="submit" value="LOGIN"/>
         </div>
     </form>
   )
