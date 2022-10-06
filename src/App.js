@@ -6,6 +6,7 @@ import Navbar from './components/Navbar/Navbar';
 import CharacterForm from './components/CharacterForm';
 // import React, { Component } from 'react';
 import React, { useState } from 'react';
+import { logout } from './services/firebase';
 
 
 function App() {
@@ -29,20 +30,17 @@ function App() {
     });
   } else {console.log('Details do not match')}
 
-  const Logout = () => {
-    console.log('Logout');
+
   }
-}
-
-
-
-
+  const Logout = () => {
+    setUser({name:"", email:""});
+  }
   return (
     <div className="App">
       {(user.email !="") ? (
         <div className='welcome'>
           <h2>Welcome, <span>{user.name}</span></h2>
-          <button>Logout</button>
+          <button onClick={Logout}>Logout</button>
           </div>
       ) : (
         <Loginform Login={Login} error={error}/>
