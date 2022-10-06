@@ -3,12 +3,12 @@ import './Navbar.css'
 export const MenuItems = [
     {
         title: 'Home',
-        url: '#',
+        url: '/',
         cName:'nav-links',
 
     },{
         title: 'Character Sheet',
-        url: './src/components/CharacterForm.js',
+        url: '/character',
         cName:'nav-links',
 
     },{
@@ -18,7 +18,7 @@ export const MenuItems = [
 
     },{
         title: 'Log in or Sign Up',
-        url: '#',
+        url: './src/components/LoginForm.js',
         cName:'nav-links-mobile',
 
     }

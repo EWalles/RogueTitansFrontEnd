@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../../components/Navbar/Navbar';
 
 function Zach() {
   let url="www.linkedin.com/in/zachgexler";

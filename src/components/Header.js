@@ -16,7 +16,7 @@ function Header() {
             <Link to="/">
                     <div>The Rogue Tavern</div>
             </Link>
-            <div style={{display: 'flex'}}>
+            {/* <div style={{display: 'flex'}}>
                 <div
                 onClick={login}
                 style={{marginRight: 10}}>Login</div>
@@ -24,7 +24,7 @@ function Header() {
                 onClick={logout}
                 style={{marginRight: 10}}>Logout</div>
 
-            </div>
+            </div> */}
             </Route>
 
         </nav>

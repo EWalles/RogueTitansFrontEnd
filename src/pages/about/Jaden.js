@@ -1,6 +1,5 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Navbar from '../../components/Navbar/Navbar';
 function Jaden() {
   let url="https://www.linkedin.com/in/jaden-garrity-96b33185/";
   let element=<a href={url}>Jaden Garrity</a>;
