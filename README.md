@@ -10,13 +10,13 @@ Click the <a href = "https://tinyurl.com/roguetavern">link</a> here. Once there,
 
 ## Contributers Links
 ### Linked In
-<a href = "https://www.linkedin.com/in/jaden-garrity-96b33185/">Jaden</a>
-<a href ="https://www.linkedin.com/in/zachgexler">Zach</a>
-<a href ="https:www.linkedin.com/in/edith-walles">Edith</a>
+<a href = "https://www.linkedin.com/in/jaden-garrity-96b33185/">Jaden</a><br>
+<a href ="https://www.linkedin.com/in/zachgexler">Zach</a><br>
+<a href ="https:www.linkedin.com/in/edith-walles">Edith</a><br>
 <a href="https://www.linkedin.com/in/samim-kohistani-82615b24b/">Samim</a>
 
 ### Git Hub
-<a href ="https://github.com/MrTowelGuy">Jaden</a>
-<a href ="https://github.com/zachgexler">Zack</a>
-<a href ="https://github.com/EWalles">Edith</a>
+<a href ="https://github.com/MrTowelGuy">Jaden</a><br>
+<a href ="https://github.com/zachgexler">Zack</a><br>
+<a href ="https://github.com/EWalles">Edith</a><br>
 <a href ="https://github.com/samimkohistani">Samim</a>
