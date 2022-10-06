@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+
 // IMPORT SCSS FILE TO BE SOURCE OF STYLING
 
 // IMPORT ROUTER

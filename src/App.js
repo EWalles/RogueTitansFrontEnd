@@ -3,6 +3,7 @@ import Loginform from './components/LoginForm';
 import Header from './components/Header';
 import Footer from "./components/Footer"
 import Navbar from './components/Navbar/Navbar';
+import { Route, Switch } from "react-router-dom";
 import CharacterForm from './components/CharacterForm';
 // import React, { Component } from 'react';
 import React, { useState } from 'react';
@@ -10,7 +11,7 @@ import { logout } from './services/firebase';
 
 
 function App() {
-  const URL = "https://roguetita.herokuapp.com/";
+  const URL = "https://roguetitanp3.herokuapp.com/";
   const adminUser = {
     email: 'admin@admin.com',
     password: 'admin123'
@@ -40,6 +41,8 @@ function App() {
   }
   return (
     <div className="App">
+
+      <Navbar/>
       {(user.email !="") ? (
         <div className='welcome'>
           <h2>Welcome, <span>{user.name}</span></h2>
@@ -48,11 +51,17 @@ function App() {
       ) : (
         <Loginform Login={Login} error={error}/>
       )}
-
-      <Navbar/>
       <Header className="App-header">
         
       </Header>
+      {/* <Switch>
+        <Route exact path="/">
+          <App/>
+        </Route>
+        <Route exact path="/character">
+
+        </Route>
+      </Switch> */}
       <Footer />
       <body>
       <p>
@@ -69,6 +78,7 @@ function App() {
             onclick="location.href= 'https://blizzardwatch.com/2020/06/05/off-topic-dungeons-dragons-101-beginners-guide/'"/>
         {/* <button type="button" class="btn btn-info"><a href="/character/create">Create Your DND Master</a></button> */}
       </body>
+        <CharacterForm/>
     </div>
     
   );

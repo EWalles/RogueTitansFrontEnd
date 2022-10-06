@@ -3,22 +3,22 @@ import './Navbar.css'
 export const MenuItems = [
     {
         title: 'Home',
-        url: '#',
+        url: '/',
         cName:'nav-links',
 
     },{
         title: 'Character Sheet',
-        url: '#',
+        url: '/character',
         cName:'nav-links',
 
     },{
         title: 'About',
-        url: '#',
+        url: './src/pages/About.js',
         cName:'nav-links',
 
     },{
         title: 'Log in or Sign Up',
-        url: '#',
+        url: './src/components/LoginForm.js',
         cName:'nav-links-mobile',
 
     }
