@@ -11,7 +11,7 @@ import { logout } from './services/firebase';
 
 
 function App() {
-  const URL = "https://roguetita.herokuapp.com/";
+  const URL = "https://roguetitanp3.herokuapp.com/";
   const adminUser = {
     email: 'admin@admin.com',
     password: 'admin123'
