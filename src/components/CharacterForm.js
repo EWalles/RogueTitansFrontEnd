@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 
-function Index(props) {
+function CharacterForm(props) {
   // formData and I'm not sure if I have to have open strings here
   const [ newForm, setNewForm ] = useState({
     name: "",
@@ -73,7 +73,7 @@ function Index(props) {
   );
 }
 
-export default Index;
+export default CharacterForm;
 
 
 //ZG I used stackoverflow, medium, w3schools and past work to try and create this index page for character creation to show up as a form on the FE with button
