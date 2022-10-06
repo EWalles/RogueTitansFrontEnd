@@ -1,7 +1,8 @@
-// import firebase npm package
-import firebase from 'firebase/app';
-// import the auth module from firebase
-import 'firebase/auth';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import 'firebase/compat/firestore';
+
+
 const firebaseConfig = {
     apiKey: "AIzaSyCsqyRRz7L-DfKCcNu4ppki6Q6RllyUKzc",
     authDomain: "rogouetitan.firebaseapp.com",
@@ -28,7 +29,7 @@ const firebaseConfig = {
   }
   // Export functionality
 
-  export{
+  export {
     login,
     logout,
     auth
