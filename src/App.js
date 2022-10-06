@@ -55,7 +55,7 @@ function App() {
         
       </Header>
       {/* <Switch>
-        <Route exact path="/">
+        <Route exact path="/"/>
           <App/>
         </Route>
         <Route exact path="/character">
