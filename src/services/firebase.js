@@ -15,7 +15,15 @@ const firebaseConfig = {
   //Initialize the firebase app
   firebase.initializeApp(firebaseConfig);
 
-  //TODO: Set up our provider for google signin
+  //Set up our provider for google signin
+  const auth = firebase.auth();
+  const provider = new firebase.auth.GoogleAuthProvider()
 
-  //TODO: Define login and logout actions
+  //Define login and logout actions
+  function login(){
+    return auth.signInWithPopup(provider);
+  }
+  function logout(){
+    return auth.signOut();
+  }
   //TODO: Export functionality
