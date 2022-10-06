@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# The Rogue Tavern
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was a collaborative effort by Edith, Jaden, Samim, Zach using MERN stack. It is a character sheet builder and editor that starts with Dungeons and Dragons. (Because it's OGL and this is a fan made product)
+
 
 ## Available Scripts
 
