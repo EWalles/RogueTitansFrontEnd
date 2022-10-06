@@ -1,4 +1,6 @@
 //Header.js
+// import firebae.js
+import {login, logout } from '../services/firebase';
 // import {logo} from "public/gallery/logo.png"
 import Navbar from "./Navbar/Navbar"
 
