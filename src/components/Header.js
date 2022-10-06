@@ -1,4 +1,6 @@
 //Header.js
+// import firebae.js
+import {login, logout } from '../services/firebase';
 // import {logo} from "public/gallery/logo.png"
 import Navbar from "./Navbar/Navbar"
 
@@ -14,13 +16,19 @@ function Header() {
             <Link to="/">
                     <div>The Rogue Tavern</div>
             </Link>
-                <div>
+            <div style={{display: 'flex'}}>
+                <div
+                onClick={login}
+                style={{marginRight: 10}}>Login</div>
+                <div
+                onClick={logout}
+                style={{marginRight: 10}}>Logout</div>
 
-                </div>
+            </div>
             </Route>
 
         </nav>
-    )
+    );
 }
 
 export default Header
