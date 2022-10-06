@@ -26,4 +26,10 @@ const firebaseConfig = {
   function logout(){
     return auth.signOut();
   }
-  //TODO: Export functionality
+  // Export functionality
+
+  export{
+    login,
+    logout,
+    auth
+  }
