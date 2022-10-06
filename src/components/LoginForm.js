@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-
 function Loginform({ Login, error}) {
     const [details, setDetails] = useState({name:"", email: "", password: ""});
 
