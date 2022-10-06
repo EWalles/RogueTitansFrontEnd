@@ -1,7 +1,9 @@
+import { useEffect } from "react";
 import { useState } from "react"
 import { Link } from "react-router-dom"
-
-function Index(props) {
+import React from "react";
+import axios from 'axios';
+function CharacterForm(props) {
   // formData and I'm not sure if I have to have open strings here
   const [ newForm, setNewForm ] = useState({
     name: "",
@@ -13,33 +15,49 @@ function Index(props) {
   const handleChange = event => {
     setNewForm({ ...newForm, [event.target.name]: event.target.value });
   }
+  
 
+  async function createCharacter(inpt) {
+    const {data} = await axios.post(
+        'http://localhost:4949/character/create'
+        , newForm);
+  }
+  
   // handle submit for form from looking back at past work/online/w3 schools
   const handleSubmit = event => {
     event.preventDefault();
-    props.createCharacter(newForm);
+
+    // Create the character and add to the database
+    createCharacter(newForm);
+    
     setNewForm({
       name: "",
       description: "",
       skills: "",
     });
   }
-
   // load function w3 schools and past markdowns
   const loaded = () => {
-    return props.character.map(xcharacter => (
-      <div key={xcharacter._id} className="xcharacter">
-        <Link to={`/character/${xcharacter._id}`}>
-          <h1>{xcharacter.name}</h1>
-        </Link>
-        <img src={xcharacter.image} alt={xcharacter.name} />
-        <h3>{xcharacter.title}</h3>
-      </div>
-    ));
+    return (
+        <div> 
+            <h3>Character Name: {newForm.name}</h3>
+            <h5>Description:  {newForm.description}</h5>
+            <div>Skills: {newForm.skills} </div>
+        </div>
+    )
   }
 
   const loading = () => {
     return <h1>Loading...</h1>;
+  }
+  let newCharacter;
+  if (handleSubmit)
+  {
+    newCharacter = <div>{loaded()}</div>;
+  }
+  else
+  {
+    newCharacter = <div>{loading()}</div>;
   }
 
   return (
@@ -68,12 +86,13 @@ function Index(props) {
         />
         <input type="submit" value="Create Character" />
       </form>
-      {props.character ? loaded() : loading()}
+      {newCharacter}
+
     </section>
   );
 }
 
-export default Index;
+export default CharacterForm;
 
 
 //ZG I used stackoverflow, medium, w3schools and past work to try and create this index page for character creation to show up as a form on the FE with button
