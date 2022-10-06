@@ -1,13 +1,44 @@
 import './App.css';
+import Loginform from './components/LoginForm';
 import Header from './components/Header';
 import Footer from "./components/Footer"
 import Navbar from './components/Navbar/Navbar';
 import CharacterForm from './components/CharacterForm';
-import React, { Component } from 'react';
+// import React, { Component } from 'react';
+import React, { useState } from 'react';
+
+
 function App() {
   const URL = "https://roguetita.herokuapp.com/";
+  const adminUser = {
+    email: 'admin@admin.com',
+    password: 'admin123'
+  }
+
+  const [user, setUser] = useState({name:"", email:""})
+  const [error, setError] = useState('');
+
+  const Login = details => {
+    console.log(details);
+  }
+  const Logout = () => {
+    console.log('Logout');
+  }
+
+
+
+
   return (
     <div className="App">
+      {(user.email !="") ? (
+        <div className='welcome'>
+          <h2>Welcome, <span>{user.name}</span></h2>
+          <button>Logout</button>
+          </div>
+      ) : (
+        <Loginform/>
+      )}
+
       <Navbar/>
       <Header className="App-header">
         
