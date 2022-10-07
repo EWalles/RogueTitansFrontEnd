@@ -11,7 +11,6 @@ import { logout } from './services/firebase';
 
 
 function App() {
-  const URL = "https://roguetitanp3.herokuapp.com/";
   const adminUser = {
     email: 'admin@admin.com',
     password: 'admin123'
@@ -78,7 +77,6 @@ function App() {
             onclick="location.href= 'https://blizzardwatch.com/2020/06/05/off-topic-dungeons-dragons-101-beginners-guide/'"/>
         {/* <button type="button" class="btn btn-info"><a href="/character/create">Create Your DND Master</a></button> */}
       </body>
-        <CharacterForm/>
     </div>
     
   );
