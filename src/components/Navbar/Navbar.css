@@ -32,6 +32,7 @@
 .nav-menu {
     display: grid;
     grid-template-columns: repeat(5, auto);
+    margin-top: 60px;
     grid-gap: 60px;
     list-style: none;
     text-align: center;
@@ -75,7 +76,7 @@
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 80px;
+        top: 20px;
         left: -100%;
         opacity: 1;
         transition: all 0.5s ease;

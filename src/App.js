@@ -1,17 +1,71 @@
 import './App.css';
+import Loginform from './components/LoginForm';
 import Header from './components/Header';
 import Footer from "./components/Footer"
 import Navbar from './components/Navbar/Navbar';
+import { Route, Switch } from "react-router-dom";
 import CharacterForm from './components/CharacterForm';
-import React, { Component } from 'react';
+// import React, { Component } from 'react';
+import React, { useState } from 'react';
+import { logout } from './services/firebase';
+
+
 function App() {
-  const URL = "https://roguetita.herokuapp.com/";
+  const URL = "https://roguetitanp3.herokuapp.com/";
+  const adminUser = {
+    email: 'admin@admin.com',
+    password: 'admin123'
+  }
+
+  const [user, setUser] = useState({name:"", email:""})
+  const [error, setError] = useState('');
+
+  const Login = details => {
+    console.log(details);
+  
+   if (details.email == adminUser.email && details.password == adminUser.password){
+    console.log("Logged in")
+    setUser({
+    name: details.name,
+    email: details.email
+    });
+  } else {
+    console.log('Details do not match');
+    setError('Details do not match!');
+}
+
+
+  }
+  const Logout = () => {
+    setUser({name:"", email:""});
+  }
   return (
     <div className="App">
+<<<<<<< HEAD
       <Navbar />
+=======
+
+      <Navbar/>
+      {(user.email !="") ? (
+        <div className='welcome'>
+          <h2>Welcome, <span>{user.name}</span></h2>
+          <button onClick={Logout}>Logout</button>
+          </div>
+      ) : (
+        <Loginform Login={Login} error={error}/>
+      )}
+>>>>>>> 8a30918244e905c2c5c2974f4d46dfeb554e995d
       <Header className="App-header">
 
       </Header>
+      {/* <Switch>
+        <Route exact path="/"/>
+          <App/>
+        </Route>
+        <Route exact path="/character">
+
+        </Route>
+      </Switch> */}
       <Footer />
       <body>
         <p>
@@ -27,7 +81,11 @@ function App() {
         <input class="btn btn-info" type="button" value="DND 101"
           onclick="location.href = 'https://blizzardwatch.com/2020/06/05/off-topic-dungeons-dragons-101-beginners-guide/'" />
       </body>
+<<<<<<< HEAD
 
+=======
+        <CharacterForm/>
+>>>>>>> 8a30918244e905c2c5c2974f4d46dfeb554e995d
     </div>
 
 
