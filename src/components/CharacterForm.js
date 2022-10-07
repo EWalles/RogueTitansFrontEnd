@@ -19,7 +19,7 @@ function CharacterForm(props) {
 
   async function createCharacter(inpt) {
     const {data} = await axios.post(
-        'http://localhost:4949/character'
+        'http://localhost:4949/character/create'
         , newForm);
   }
   

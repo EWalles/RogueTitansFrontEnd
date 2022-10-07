@@ -17,7 +17,7 @@ const Characters = () => {
     }, [])
 
     return (
-        <div> 
+        <div className="list-character"> 
             <h3> List of Characters </h3>
             <ul>
                 {characters.map(ch => (

@@ -2,3 +2,8 @@ hr {
     width: 40%;
     margin: auto;
 }
+
+.list-character ul li {
+    padding: 8px 0px;
+    font-size: large;
+}
