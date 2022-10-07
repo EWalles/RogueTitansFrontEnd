@@ -11,23 +11,7 @@ import { Link, Route } from "react-router-dom"
 
 function Header() {
     return (
-        <nav className="nav">
-            <Route>
-            <Link to="/">
-                    <div>The Rogue Tavern</div>
-            </Link>
-            {/* <div style={{display: 'flex'}}>
-                <div
-                onClick={login}
-                style={{marginRight: 10}}>Login</div>
-                <div
-                onClick={logout}
-                style={{marginRight: 10}}>Logout</div>
-
-            </div> */}
-            </Route>
-
-        </nav>
+        <Navbar/>
     );
 }
 

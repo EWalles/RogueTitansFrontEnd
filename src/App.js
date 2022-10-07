@@ -41,11 +41,9 @@ function App() {
   }
   return (
     <div className="App">
-<<<<<<< HEAD
-      <Navbar />
-=======
+      <Header className="App-header">
 
-      <Navbar/>
+      </Header> 
       {(user.email !="") ? (
         <div className='welcome'>
           <h2>Welcome, <span>{user.name}</span></h2>
@@ -54,10 +52,7 @@ function App() {
       ) : (
         <Loginform Login={Login} error={error}/>
       )}
->>>>>>> 8a30918244e905c2c5c2974f4d46dfeb554e995d
-      <Header className="App-header">
-
-      </Header>
+      
       {/* <Switch>
         <Route exact path="/"/>
           <App/>
@@ -81,11 +76,6 @@ function App() {
         <input class="btn btn-info" type="button" value="DND 101"
           onclick="location.href = 'https://blizzardwatch.com/2020/06/05/off-topic-dungeons-dragons-101-beginners-guide/'" />
       </body>
-<<<<<<< HEAD
-
-=======
-        <CharacterForm/>
->>>>>>> 8a30918244e905c2c5c2974f4d46dfeb554e995d
     </div>
 
 
