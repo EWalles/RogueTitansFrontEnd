@@ -22,7 +22,7 @@ import Navbar from './components/Navbar/Navbar';
 
 //   const Login = details => {
 //     console.log(details);
-  
+
 //    if (details.email == adminUser.email && details.password == adminUser.password){
 //     console.log("Logged in")
 //     setUser({
@@ -52,8 +52,8 @@ import Navbar from './components/Navbar/Navbar';
 //       ) : (
 //         <Loginform Login={Login} error={error}/>
 //       )}
-      
-  
+
+
 //       <body>
 //         <p>
 //           Gaming has been around for as long as humans have been alive. Tabletop roleplaying games... not so much. The first commercially available role-playing game, Dungeons and Dragons DnD, was published in 1974 by Gygax's TSR which marketed the game as a niche product. It was a mix of war-games and roleplaying.
@@ -65,7 +65,7 @@ import Navbar from './components/Navbar/Navbar';
 //           This program starts with 5th edition Dungeons and Dragons for a base component. At the top you can click the link and create a character with the SRD rules available. You will need the books for some of the specialties that can not be listed.
 //         </p>
 //         <CharacterForm />
-  
+
 //         <Footer/>
 
 //         <input class="btn btn-info" type="button" value="DND 101"
@@ -80,12 +80,13 @@ import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
-      <div>
-        <Navbar></Navbar>
-        <Route path="/home" index><Home /></Route>
-        <Route path="/characters"><Characters/></Route>
-      </div>
+    <div className="App">
+      <Header className="App-header">
+      </Header>
 
+      <Route path="/home" index><Home /></Route>
+      <Route path="/characters"><Characters /></Route>
+    </div>
   )
 }
 

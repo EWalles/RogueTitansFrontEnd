@@ -1,7 +1,6 @@
 //Code help to create an interactive navbar provided by tutorial "react navbar tutoral" from Brian Design on youtube
 import React, { Component } from "react";
 import { MenuItems } from "./MenuItems"
-import './Navbar.css'
 import { Button } from "../Button";
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 
@@ -36,14 +35,8 @@ class Navbar extends Component {
             //     </div>
             // </nav>
             <nav>
-                <ul>
-                    <li>
-                        <Link to="/home"> Home </Link>
-                    </li>
-                    <li>
-                        <Link to="/characters"> Characters </Link>
-                    </li>
-                </ul>
+                <Link to="/home"> Home </Link>
+                <Link to="/characters"> Characters </Link>
             </nav>
         )
     }

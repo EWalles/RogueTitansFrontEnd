@@ -62,6 +62,8 @@ function CharacterForm(props) {
 
   return (
     <section>
+      <h3> CREATE NEW CHARACTER! </h3>
+      
       <form onSubmit={handleSubmit}>
         <input
           type="text"

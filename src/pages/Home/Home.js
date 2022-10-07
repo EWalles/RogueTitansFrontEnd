@@ -37,10 +37,7 @@ function Home() {
     setUser({name:"", email:""});
   }
   return (
-    <div className="App">
-      <Header className="App-header">
-
-      </Header> 
+    <div className="App"> 
       {(user.email !="") ? (
         <div className='welcome'>
           <h2>Welcome, <span>{user.name}</span></h2>
@@ -49,8 +46,6 @@ function Home() {
       ) : (
         <Loginform Login={Login} error={error}/>
       )}
-      
-  
       <body>
         <p>
           Gaming has been around for as long as humans have been alive. Tabletop roleplaying games... not so much. The first commercially available role-playing game, Dungeons and Dragons DnD, was published in 1974 by Gygax's TSR which marketed the game as a niche product. It was a mix of war-games and roleplaying.

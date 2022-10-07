@@ -33,7 +33,16 @@ body{
   color: white;
 }
 
+nav {
+  background-color: rgb(126, 50, 0);
+  padding: 10px;
+}
 
+nav a {
+  color: white;
+  padding: 10px 10px;
+  text-decoration: none;
+}
 
 /* .App-logo {
   height: 40vmin;
