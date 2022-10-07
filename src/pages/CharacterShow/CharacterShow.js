@@ -1,10 +1,36 @@
 import React from 'react';
+import { useEffect, useState } from 'react';
+import './../CharacterShow/style.css';
 
 
-function Characters() {
+const Characters = () => {
+    const [characters, setCharacters] = useState([])
+
+    const fetchData = () => {
+        fetch("http://localhost:4949/character")
+        .then(res => { return res.json() })
+        .then(data => { setCharacters(data) });
+    }
+
+    useEffect( () => {
+        fetchData()
+    }, [])
+
     return (
         <div> 
-            <h3> Show Characters here </h3>
+            <h3> List of Characters </h3>
+            <ul>
+                {characters.map(ch => (
+                    <li>
+                        <div key={ch.id}>
+                            <h5> {ch.name}</h5>
+                            <h5> {ch.description}</h5>
+                            <h5> {ch.skills}</h5>
+                            <hr></hr>
+                        </div>
+                    </li>
+                ))}
+            </ul>
         </div>
     );
 }
