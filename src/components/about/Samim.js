@@ -1,10 +1,12 @@
 import React from 'react';
 import { render } from '@testing-library/react';
+import Navbar from '../../components/Navbar/Navbar';
 function Samim() {
-  let url="https://www.linkedin.com/in/samim-kohistani-82615b24b/";
-  let element=<a href={url}>Samim Kohistani</a>;
+  let url="###";
+  let element=<a href={url}>Github handle</a>;
   render (
     <div className="App">
+      <Navbar/>
         samim kohistani ....................: {element}
     </div>
   );

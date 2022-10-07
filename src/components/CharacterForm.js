@@ -1,98 +1,78 @@
-import { useEffect } from "react";
-import { useState } from "react"
-import { Link } from "react-router-dom"
-import React from "react";
-import axios from 'axios';
-function CharacterForm(props) {
-  // formData and I'm not sure if I have to have open strings here
-  const [ newForm, setNewForm ] = useState({
-    name: "",
-    description: "",
-    skills: "",
-  });
+// import { useState, useEffect } from 'react';
+import { Switch, Route } from 'react-router-dom';
+import React, { Component }  from 'react';
+import { useState, useEffect } from 'react';
+import Index from '../pages/Index';
+import Show from '../pages/Show';
 
-  // handle change for form from looking back at past work/online/w3 schools
-  const handleChange = event => {
-    setNewForm({ ...newForm, [event.target.name]: event.target.value });
-  }
-  
+function Main(props) {
+    const [ character, setCharacter ] = useState(null);
+    const URL = 'https://roguetitanp3.herokuapp.com/character';
 
-  async function createCharacter(inpt) {
-    const {data} = await axios.post(
-        'http://localhost:4949/character/create'
-        , newForm);
-  }
-  
-  // handle submit for form from looking back at past work/online/w3 schools
-  const handleSubmit = event => {
-    event.preventDefault();
+    // fetch character data from our backend
+    const getCharacter = async () => {
+        const response = await fetch(URL);
+        const data = await response.json();
+        setCharacter(data);
+    };
 
-    // Create the character and add to the database
-    createCharacter(newForm);
-    
-    setNewForm({
-      name: "",
-      description: "",
-      skills: "",
-    });
-  }
-  // load function w3 schools and past markdowns
-  const loaded = () => {
+
+    // create people using fetch
+    const createCharacter = async (character) => {
+        await fetch(URL, {
+            method: 'POST',
+            headers: {
+                'Content-type': 'Application/json'
+            },
+            body: JSON.stringify(character)
+        });
+        
+        getCharacter();
+    };
+
+
+    // update people
+    const updateCharacter = async (character, id) => {
+        await fetch(URL + id, {
+            method: 'PUT',
+            headers: {
+                'Content-type': 'Application/json'
+            },
+            body: JSON.stringify(character)
+        });
+
+        getCharacter();
+    }
+
+    // delete people
+
+    const deleteCharacter = async (id) => {
+        await fetch(URL + id, {
+            method: 'DELETE'
+        });
+        
+        getCharacter();
+    }
+
+    useEffect(() => getCharacter(), []);
+
     return (
-        <div> 
-            <h3>Character Name: {newForm.name}</h3>
-            <h5>Description:  {newForm.description}</h5>
-            <div>Skills: {newForm.skills} </div>
-        </div>
-    )
-  }
-
-  const loading = () => {
-    return <h1>Loading...</h1>;
-  }
-  let newCharacter;
-  if (handleSubmit)
-  {
-    newCharacter = <div>{loaded()}</div>;
-  }
-  else
-  {
-    newCharacter = <div>{loading()}</div>;
-  }
-
-  return (
-    <section>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          value={newForm.name}
-          name="name"
-          placeholder="name"
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          value={newForm.description}
-          name="description"
-          placeholder="desc"
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          value={newForm.skills}
-          name="skills"
-          placeholder="skills"
-          onChange={handleChange}
-        />
-        <input type="submit" value="Create Character" />
-      </form>
-      {newCharacter}
-
-    </section>
-  );
+        <main>
+            <Switch>
+                <Route exact path="/">
+                    <Index character={character} createCharacter={createCharacter} />
+                </Route>
+                <Route path="/character/:id" render={(rp) => (
+                    <Show 
+                        {...rp}
+                        character={character}
+                        deleteCharacter={deleteCharacter} 
+                        updateCharacter={updateCharacter}
+                    />
+                )} />
+            </Switch>
+        </main>
+    );
 }
 
-export default CharacterForm;
-
-
-//ZG I used stackoverflow, medium, w3schools and past work to try and create this index page for character creation to show up as a form on the FE with button
+export default Main;
