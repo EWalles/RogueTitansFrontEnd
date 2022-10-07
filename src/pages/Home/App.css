@@ -44,6 +44,18 @@ nav a {
   text-decoration: none;
 }
 
+#new-character {
+  margin: 10px 10px;
+}
+#character-form {
+  margin-top: 30px;
+}
+
+#character-form h3 {
+  font-weight: 800;
+  color:white;
+}
+
 /* .App-logo {
   height: 40vmin;
   pointer-events: none;

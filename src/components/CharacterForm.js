@@ -39,10 +39,10 @@ function CharacterForm(props) {
   // load function w3 schools and past markdowns
   const loaded = () => {
     return (
-        <div> 
+        <div id="new-character"> 
             <h3>Character Name: {newForm.name}</h3>
-            <h5>Description:  {newForm.description}</h5>
-            <div>Skills: {newForm.skills} </div>
+            <h3>Description:  {newForm.description}</h3>
+            <h3>Skills: {newForm.skills} </h3>
         </div>
     )
   }
@@ -61,7 +61,7 @@ function CharacterForm(props) {
   }
 
   return (
-    <section>
+    <section id="character-form">
       <h3> CREATE NEW CHARACTER! </h3>
       
       <form onSubmit={handleSubmit}>
