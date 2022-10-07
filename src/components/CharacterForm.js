@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import Index from '../pages/Index';
 import Show from '../pages/Show';
 
-function Main(props) {
+function CharacterForm(props) {
     const [ character, setCharacter ] = useState(null);
     const URL = 'https://roguetitanp3.herokuapp.com/character';
 
@@ -75,4 +75,4 @@ function Main(props) {
     );
 }
 
-export default Main;
+export default CharacterForm;

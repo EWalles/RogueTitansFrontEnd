@@ -19,18 +19,14 @@ function Index(props) {
         props.createCharacter(newForm);
         console.log(newForm);
         setNewForm({
-          
             name: '',
             description: '',
             skills: '',
         });
     }
 
-
     const loaded = () => {
-        return (
-            <section>
-                {props.character.map((character) => (
+        return props.character.map((character) => (
                     <div key={character._id} className="character">
                         <Link to={`/character/${character._id}`}>
                             <h1>{character.name}</h1>
@@ -39,9 +35,7 @@ function Index(props) {
                         <h3>{character.skills}</h3>
                     </div>
                 ))}
-            </section>
-        );
-    };
+        
 
     const loading = () => {
         return <h1>Loading ...</h1>
