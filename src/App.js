@@ -7,7 +7,6 @@ import { Route, Switch } from "react-router-dom";
 import CharacterForm from "./components/CharacterForm";
 // import React, { Component } from ‘react";
 import React, { useState } from "react";
-import { logout } from "./services/firebase";
 function App() {
   const adminUser = {
     email: "admin@admin.com",
