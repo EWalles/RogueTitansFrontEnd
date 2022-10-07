@@ -19,7 +19,7 @@ function CharacterForm(props) {
 //app
   async function createCharacter(inpt) {
     const {data} = await axios.post(
-        'https://roguetitanp3.herokuapp.com/'
+        'https://roguetitanp3.herokuapp.com/character'
         , newForm)
   }
   
