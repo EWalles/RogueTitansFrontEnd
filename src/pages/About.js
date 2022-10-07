@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link, BrowserRouter as Router } from 'react-router-dom';
 import Navbar from '../components/Navbar/Navbar';
-import Edith from "./about/Edith";
-import Samim from "./about/Samim";
-import Zach from "./about/Zach";
-import Jaden from "./about/Jaden";
+import Edith from "../components/about/Edith";
+import Samim from "../components/about/Samim";
+import Zach from "../components/about/Zach";
+import Jaden from "../components/about/Jaden";
 
 function About ( ) {
     return (

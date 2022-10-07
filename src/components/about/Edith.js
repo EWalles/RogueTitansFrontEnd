@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Navbar from '../../components/Navbar/Navbar';
+import Navbar from '../Navbar/Navbar';
 function Edith() {
   let url="https://linktr.ee/angelscitadel";
   let element=<a href={url}>Edith Walles</a>;
