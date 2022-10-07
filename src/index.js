@@ -4,14 +4,16 @@ import ReactDOM from "react-dom";
 // IMPORT SCSS FILE TO BE SOURCE OF STYLING
 
 // IMPORT ROUTER
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter, BrowserRouter as Router } from "react-router-dom";
 import App from "./App";
 
 
 ReactDOM.render(
   <Router>
     <React.StrictMode>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </React.StrictMode>
   </Router>,
   document.getElementById("root")

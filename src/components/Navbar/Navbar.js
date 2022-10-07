@@ -3,36 +3,47 @@ import React, { Component } from "react";
 import { MenuItems } from "./MenuItems"
 import './Navbar.css'
 import { Button } from "../Button";
+import { BrowserRouter, Route, Link } from 'react-router-dom'
 
 class Navbar extends Component {
-    state = { clicked: false}
+    // state = { clicked: false}
 
-    handleClick = () => {
-        this.setState({ clicked: !this.state.clicked })
-    }
+    // handleClick = () => {
+    //     this.setState({ clicked: !this.state.clicked })
+    // }
 
 
     render (){
         return(
-            <nav className="NavbarItems">
-                <h1 className="navbar-logo"><i class="fa-solid fa-dice-d20"></i></h1>
-                <div className="menu-icon" onClick={this.handleClick}>
-                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
-                </div>
-                <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
-                    {MenuItems.map((item, index)=>{
-                        return(
-                            <li key ={index}>
-                                <a className={item.cName} href={item.url}>
-                                {item.title}
-                            </a>
-                            </li>
-                        )
-                    })}
+            // <nav className="NavbarItems">
+            //     <h1 className="navbar-logo"><i class="fa-solid fa-dice-d20"></i></h1>
+            //     <div className="menu-icon" onClick={this.handleClick}>
+            //         <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+            //     </div>
+            //     <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
+            //         {MenuItems.map((item, index)=>{
+            //             return(
+            //                 <li key ={index}>
+            //                     <a className={item.cName} href={item.url}>
+            //                     {item.title}
+            //                 </a>
+            //                 </li>
+            //             )
+            //         })}
+            //     </ul>
+            //     <div>
+            //         <Button className="nav-bar-buttons-hi">Log in</Button>
+            //     </div>
+            // </nav>
+            <nav>
+                <ul>
+                    <li>
+                        <Link to="/home"> Home </Link>
+                    </li>
+                    <li>
+                        <Link to="/characters"> Characters </Link>
+                    </li>
                 </ul>
-                <div>
-                    <Button className="nav-bar-buttons-hi">Log in</Button>
-                </div>
             </nav>
         )
     }
