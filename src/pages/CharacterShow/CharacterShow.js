@@ -7,7 +7,7 @@ const Characters = () => {
     const [characters, setCharacters] = useState([])
 
     const fetchData = () => {
-        fetch("http://localhost:4949/character")
+        fetch("https://roguetitanp3.herokuapp.com/")
         .then(res => { return res.json() })
         .then(data => { setCharacters(data) });
     }
@@ -32,6 +32,7 @@ const Characters = () => {
                 ))}
             </ul>
         </div>
+        
     );
 }
 
