@@ -17,7 +17,7 @@ Netlify<br>
 
 
 # Instructions and Deploy Link
-Click the <a href = "https://tinyurl.com/roguetavern">link</a> here. Once there, feel free to look around, you'll find the navigation bar at the top.
+Click the <a href = "https://famous-druid-36655d.netlify.app/">link</a> here. Once there, feel free to look around, you'll find the navigation bar at the top.
 
 ## Future Features
 We aim to add Dice rolling bots, scenario creators, a character art generator, and different hubs for different table top games.
